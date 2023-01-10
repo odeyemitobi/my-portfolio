@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: black !important;
   color: #ffffff !important;
   font-family: "Centra", sans-serif !important;
 }
@@ -72,7 +72,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: black;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -135,7 +135,7 @@ span.navbar-text {
 
 .connect-container {
   place-items: center;
-  background-color: #121212;
+  background-color: black;
   border: none;
   padding-left: 1rem;
 }
@@ -153,6 +153,13 @@ span.navbar-text {
   transition: 0.5s;
   letter-spacing: 4px;
 }
+
+.social-icon a:hover {
+  background: #121212;
+  color: #ffffff;
+  box-shadow: 0 0 5px #fff, 0 0 25px #fff;
+}
+
 
 .connect-container a:hover {
   background: #121212;
@@ -290,6 +297,85 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
+
+/* banner css */
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./asset/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  flex-wrap:wrap;
+}
+.banner h1 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.banner button {
+  color: black;
+  background: #282c34;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 25px;
+}
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+
+
+
+
 
 .App {
   text-align: center;

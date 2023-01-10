@@ -82,7 +82,7 @@ export const NavBar = () => {
                 className="connect-container"
                 onClick={() => console.log("connect")}
               >
-                <a href="#">
+                <a href="https://github.com/odeyemitobi">
                   <span></span>
                   <span></span>
                   <span></span>
